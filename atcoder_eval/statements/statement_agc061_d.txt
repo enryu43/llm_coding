@@ -1,0 +1,78 @@
+Problem Statement
+There are positive integers N, M, and an N ×M positive integer matrix A_i, j. For two (strictly) increasing positive integer sequences X = (X_1, …, X_N) and Y = (Y_1, …, Y_M), we define the penalty D(X, Y) as max_1 ≤i ≤N, 1 ≤j ≤M |X_i Y_j - A_i, j|.
+Find two (strictly) increasing positive integer sequences X and Y such that D(X, Y) is the smallest possible.
+
+Constraints
+
+1 ≤N, M ≤5
+1 ≤A_i, j ≤10^9 (1 ≤i ≤N, 1 ≤j ≤M)
+All values in the input are integers. 
+
+
+Input
+Input
+ is given from Standard Input
+ in the following format:
+N M
+A_1,1 …A_1,M
+⋮A_N,1 …A_N,M
+
+
+Output
+Output
+ your answer in the following format:
+D_min
+X_1 …X_N
+Y_1 …Y_M
+
+Here, D_min is the smallest possible penalty and the following conditions should be satisfied:
+
+D(X, Y) should be equal to D_min.
+X_i < X_i + 1 (1 ≤i ≤N - 1).
+Y_j < Y_j + 1 (1 ≤j ≤M - 1).
+1 ≤X_i ≤2·10^9 (1 ≤i ≤N).
+1 ≤Y_j ≤2·10^9 (1 ≤j ≤M).
+
+One can show that there is an optimal solution satisfying the last two conditions.
+
+Sample Input
+
+ 11 1
+853922530
+
+
+Sample Output
+
+ 10
+31415
+27182
+
+
+Sample Input
+
+ 23 3
+4 4 4
+4 4 4
+4 4 4
+
+
+Sample Output
+
+ 25
+1 2 3 
+1 2 3 
+
+
+Sample Input
+
+ 33 4
+4674 7356 86312 100327
+8737 11831 145034 167690
+47432 66105 809393 936462
+
+
+Sample Output
+
+ 3357
+129 216 1208 
+39 55 670 775

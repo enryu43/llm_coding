@@ -1,0 +1,90 @@
+Problem Statement
+We have a grid with 2 rows and L columns.
+Let (i,j) denote the square at the i-th row from the top (i∈{1,2}) and j-th column from the left (1≤j≤L).
+(i,j) has an integer x _ i,j written on it.
+Find the number of integers j such that x _ 1,j=x _ 2,j.
+Here, the description of x _ i,j is given to you as the run-length compressions of (x _ 1,1,x _ 1,2,…,x _ 1,L) and (x _ 2,1,x _ 2,2,…,x _ 2,L) into sequences of lengths N _ 1 and N _ 2, respectively: ((v _ 1,1,l _ 1,1),…,(v _ 1,N _ 1,l _ 1,N _ 1)) and ((v _ 2,1,l _ 2,1),…,(v _ 2,N _ 2,l _ 2,N _ 2)).
+Here, the run-length compression of a sequence A is a sequence of pairs (v _ i,l _ i) of an element v _ i of A and a positive integer l _ i obtained as follows.
+
+Split A between each pair of different adjacent elements.
+For each sequence B _ 1,B _ 2,…,B _ k after the split, let v _ i be the element of B _ i and l _ i be the length of B _ i.
+
+
+Constraints
+
+1≤L≤10 ^ 12
+1≤N _ 1,N _ 2≤10 ^ 5
+1≤v _ i,j≤10 ^ 9 (i∈{1,2},1≤j≤N _ i)
+1≤l _ i,j≤L (i∈{1,2},1≤j≤N _ i)
+v _ i,j≠v _ i,j+1 (i∈{1,2},1≤jN _ i)
+l _ i,1+l _ i,2+⋯+l _ i,N _ i=L (i∈{1,2})
+All values in the input are integers.
+
+
+Input
+The input is given from Standard Input
+ in the following format:
+L N _ 1 N _ 2
+v _ 1,1 l _ 1,1
+v _ 1,2 l _ 1,2
+⋮v _ 1,N _ 1 l _ 1,N _ 1
+v _ 2,1 l _ 2,1
+v _ 2,2 l _ 2,2
+⋮v _ 2,N _ 2 l _ 2,N _ 2
+
+
+Output
+Print a single line containing the answer.
+
+Sample Input
+
+ 18 4 3
+1 2
+3 2
+2 3
+3 1
+1 4
+2 1
+3 3
+
+
+Sample Output
+
+ 14
+
+The grid is shown below.
+
+We have four integers j such that x _ 1,j=x _ 2,j: j=1,2,5,8. Thus, you should print 4.
+
+Sample Input
+
+ 210000000000 1 1
+1 10000000000
+1 10000000000
+
+
+Sample Output
+
+ 210000000000
+
+Note that the answer may not fit into a 32-bit integer.
+
+Sample Input
+
+ 31000 4 7
+19 79
+33 463
+19 178
+33 280
+19 255
+33 92
+34 25
+19 96
+12 11
+19 490
+33 31
+
+
+Sample Output
+
+ 3380

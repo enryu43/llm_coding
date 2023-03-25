@@ -1,0 +1,64 @@
+Problem Statement
+Find the number of pairs (P,Q)=((P_1,P_2,⋯,P_N),(Q_1,Q_2,⋯,Q_N)) of permutations of (1,2,⋯,N) that satisfy the following condition, modulo 998244353.
+
+For every i (1 ≤i ≤N-1), one of the two conditions below holds.
+P_i < P_i+1 and Q_i < Q_i+1.
+P_i > P_i+1 and Q_i > Q_i+1.
+
+
+
+
+Constraints
+
+2 ≤N ≤2 ×10^5
+All numbers in the input are integers.
+
+
+Input
+The input is given from Standard Input
+ in the following format:
+N
+
+
+Output
+Print the answer.
+
+Sample Input
+
+ 12
+
+
+Sample Output
+
+ 12
+
+Two pairs, (P,Q)=((1,2),(1,2)) and (P,Q)=((2,1),(2,1)), satisfy the condition.
+
+Sample Input
+
+ 23
+
+
+Sample Output
+
+ 210
+
+
+Sample Input
+
+ 34
+
+
+Sample Output
+
+ 388
+
+
+Sample Input
+
+ 410
+
+
+Sample Output
+
+ 4286574791

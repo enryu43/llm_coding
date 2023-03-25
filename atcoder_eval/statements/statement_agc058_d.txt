@@ -1,0 +1,63 @@
+Problem Statement
+You are given integers A, B, and C.
+How many strings S consisting of A, B, and C satisfy all of the following conditions? Find the count modulo 998244353.
+
+The number of occurrences of A, B, and C in S are A, B, and C, respectively.
+S contains none of ABC, BCA, and CAB as a (contiguous) substring.
+
+
+Constraints
+
+1 ≤A,B,C ≤10^6
+All values in input are integers.
+
+
+Input
+Input
+ is given from Standard Input
+ in the following format:
+A B C
+
+
+Output
+Print the answer.
+
+Sample Input
+
+ 11 1 1
+
+
+Sample Output
+
+ 13
+
+The three strings that satisfy the conditions are ACB, CBA, and BAC.
+
+Sample Input
+
+ 22 2 2
+
+
+Sample Output
+
+ 242
+
+
+Sample Input
+
+ 396 11 46
+
+
+Sample Output
+
+ 3818015722
+
+
+Sample Input
+
+ 4125132 102271 152064
+
+
+Sample Output
+
+ 4128086069
