@@ -1,0 +1,66 @@
+Problem Statement
+For a permutation Q=(Q_1,Q_2,…,Q_N) of (1,2,…,N), let f(Q) be the following value:
+
+the sum of j-i over all pairs of integers (i,j) such that 1 ≤i < j ≤N and Q_i > Q_j.
+
+
+You are given a permutation P=(P_1,P_2,…,P_N) of (1,2,…,N).
+
+Let us repeat the following operation M times.
+
+Choose a pair of integers (i,j) such that 1 ≤i ≤j ≤N. Reverse P_i,P_i+1,…,P_j. Formally, replace the values of P_i,P_i+1,…,P_j with P_j,P_j-1,…,P_i simultaneously.
+
+
+There are (N(N+1)/2)^M ways to repeat the operation. Assume that we have computed f(P) for all those ways.
+
+Find the sum of these (N(N+1)/2)^M values, modulo 998244353. 
+
+Constraints
+1 ≤N,M ≤2 ×10^5
+(P_1,P_2,…,P_N) is a permutation of (1,2,…,N).
+
+
+Input
+The input is given from Standard Input in the following format:
+
+N M
+P_1 P_2 …P_N
+
+
+Output
+Print a single line containing the answer.
+
+Sample Input 1
+2 1
+1 2
+
+
+Sample Output 1
+1
+
+
+There are three ways to perform the operation, as follows.
+
+Choose (i,j)=(1,1), making P=(1,2), where f(P)=0.
+Choose (i,j)=(1,2), making P=(2,1), where f(P)=1.
+Choose (i,j)=(2,2), making P=(1,2), where f(P)=0.
+
+
+Thus, the answer is 0+1+0=1.
+
+Sample Input 2
+3 2
+3 2 1
+
+
+Sample Output 2
+90
+
+
+Sample Input 3
+10 2023
+5 8 1 9 3 10 4 7 2 6
+
+
+Sample Output 3
+543960046

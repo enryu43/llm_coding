@@ -1,6 +1,8 @@
 Problem Statement
 For a set S of pairs of non-negative integers, and a non-negative integer x, let f_S(x) defined as f_S(x)=min_(a, b) ∈S | | x-a | - b |.
+
 We have a set T of pairs of non-negative integers. Initially, T={(A, B)}.
+
 Process Q queries. The i-th query gives you three non-negative integers t_i, a_i, and b_i, and asks you to do the following.
 
 If t_i=1, add to T the pair (a_i, b_i) of non-negative integers.
@@ -8,7 +10,6 @@ If t_i=2, print the minimum value of f_T(x) for a non-negative integer x such th
 
 
 Constraints
-
 1 ≤Q ≤2 ×10^5
 0 ≤A,B ≤10^9
 t_i is 1 or 2.
@@ -19,8 +20,8 @@ All values in the input are integers.
 
 
 Input
-The input is given from Standard Input
- in the following format:
+The input is given from Standard Input in the following format:
+
 Q A B
 t_1 a_1 b_1
 t_2 a_2 b_2
@@ -30,38 +31,35 @@ t_2 a_2 b_2
 Output
 For each query with t_i=2 in the given order, print the answer in its own line.
 
-Sample Input
-
- 14 0 5
+Sample Input 1
+4 0 5
 1 3 11
 2 7 8
 1 8 2
 2 8 9
 
 
-Sample Output
-
- 12
+Sample Output 1
+2
 1
 
+
 In the second query, T={(0, 5), (3, 11) }. For x=7, we have f_T(7)=min{| |7-0|-5|, | |7-3|-11| }=min{2, 7 }=2. Similarly, f_T(8)=3. Thus, the answer is min{2, 3 }=2.
+
 In the fourth query, T={(0, 5), (3, 11), (8, 2) }. In 8 ≤x ≤9, f_T(x) takes the minimum value f_T(9)=1 at x=9.
 
-Sample Input
-
- 22 1 2
+Sample Input 2
+2 1 2
 1 2 3
 2 2 6
 
 
-Sample Output
+Sample Output 2
+0
 
- 20
 
-
-Sample Input
-
- 320 795629912 123625148
+Sample Input 3
+20 795629912 123625148
 2 860243184 892786970
 2 645778367 668513124
 1 531411849 174630323
@@ -84,9 +82,8 @@ Sample Input
 2 241667193 243982581
 
 
-Sample Output
-
- 326468090
+Sample Output 3
+26468090
 3491640
 25280111
 9543684

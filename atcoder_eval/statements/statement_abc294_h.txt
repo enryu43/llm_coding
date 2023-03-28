@@ -1,12 +1,12 @@
 Problem Statement
 You are given a simple undirected graph with N vertices numbered 1 to N and M edges numbered 1 to M. Edge i connects vertex u_i and vertex v_i.
+
 Find the number, modulo 998244353, of ways to write an integer between 1 and K, inclusive, on each vertex of this graph to satisfy the following condition:
 
 two vertices connected by an edge always have different numbers written on them.
 
 
 Constraints
-
 1 ≤N ≤30
 0 ≤M ≤min(30, N(N-1)/2 )
 1 ≤K ≤10^9
@@ -15,8 +15,8 @@ The given graph is simple.
 
 
 Input
-The input is given from Standard Input
- in the following format:
+The input is given from Standard Input in the following format:
+
 N M K
 u_1 v_1
 u_2 v_2
@@ -26,17 +26,16 @@ u_2 v_2
 Output
 Print the number, modulo 998244353, of ways to write integers between 1 and K, inclusive, on the vertices to satisfy the condition.
 
-Sample Input
-
- 14 3 2
+Sample Input 1
+4 3 2
 1 2
 2 4
 2 3
 
 
-Sample Output
+Sample Output 1
+2
 
- 12
 
 Here are the two ways to satisfy the condition.
 
@@ -44,20 +43,18 @@ Write 1 on vertices 1, 3, 4, and write 2 on vertex 2.
 Write 1 on vertex 2, and write 2 on vertex 1, 3, 4.
 
 
-Sample Input
+Sample Input 2
+4 0 10
 
- 24 0 10
 
+Sample Output 2
+10000
 
-Sample Output
-
- 210000
 
 All 10^4 ways satisfy the condition.
 
-Sample Input
-
- 35 10 5
+Sample Input 3
+5 10 5
 3 5
 1 3
 1 2
@@ -70,14 +67,12 @@ Sample Input
 2 4
 
 
-Sample Output
+Sample Output 3
+120
 
- 3120
 
-
-Sample Input
-
- 45 6 294
+Sample Input 4
+5 6 294
 1 2
 2 4
 1 3
@@ -86,14 +81,12 @@ Sample Input
 3 5
 
 
-Sample Output
+Sample Output 4
+838338733
 
- 4838338733
 
-
-Sample Input
-
- 57 12 1000000000
+Sample Input 5
+7 12 1000000000
 4 5
 2 7
 3 4
@@ -108,6 +101,5 @@ Sample Input
 3 6
 
 
-Sample Output
-
- 5418104233
+Sample Output 5
+418104233

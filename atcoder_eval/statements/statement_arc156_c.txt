@@ -1,8 +1,10 @@
 Problem Statement
 We have a tree T with vertices numbered 1 to N. The i-th edge of T connects vertex u_i and vertex v_i.
+
 Let us use T to define the similarity of a permutation P = (P_1,P_2,…,P_N) of (1,2,…,N) as follows.
 
 For a simple path x=(x_1,x_2,…,x_k) in T, let y=(P_x_1, P_x_2,…,P_x_k). The similarity is the maximum possible length of a longest common subsequence of x and y.
+
 
 Construct a permutation P with the minimum similarity.
 
@@ -16,7 +18,6 @@ For vertices X and Y in a graph G, a walk from X to Y is a sequence of vertices 
 
 
 Constraints
-
 2 ≤N ≤5000
 1≤u_i,v_i≤N
 The given graph is a tree.
@@ -24,8 +25,8 @@ All numbers in the input are integers.
 
 
 Input
-The input is given from Standard Input
- in the following format:
+The input is given from Standard Input in the following format:
+
 N
 u_1 v_1
 u_2 v_2
@@ -35,50 +36,55 @@ u_2 v_2
 Output
 Print a permutation P with the minimum similarity, separated by spaces. If multiple solutions exist, you may print any of them.
 
-Sample Input
-
- 13
+Sample Input 1
+3
 1 2
 2 3
 
 
-Sample Output
+Sample Output 1
+3 2 1
 
- 13 2 1
 
 This permutation has a similarity of 1, which can be computed as follows.
+
 
 
 For x=(1), we have y=(P_1)=(3). The length of a longest common subsequence of x and y is 0.
 
 
+
 For x=(2), we have y=(P_2)=(2). The length of a longest common subsequence of x and y is 1.
+
 
 
 For x=(3), we have y=(P_2)=(1). The length of a longest common subsequence of x and y is 0.
 
 
+
 For x=(1,2), we have y=(P_1,P_2)=(3,2). The length of a longest common subsequence of x and y is 1. The same goes for x=(2,1), the reversal of (1,2).
+
 
 
 For x=(2,3), we have y=(P_2,P_3)=(2,1). The length of a longest common subsequence of x and y is 1. The same goes for x=(3,2), the reversal of (2,3).
 
 
+
 For x=(1,2,3), we have y=(P_1,P_2,P_3)=(3,2,1). The length of a longest common subsequence of x and y is 1. The same goes for x=(3,2,1), the reversal of (1,2,3).
+
 
 
 We can prove that no permutation has a similarity of 0 or less, so this permutation is a valid answer.
 
-Sample Input
-
- 24
+Sample Input 2
+4
 2 1
 2 3
 2 4
 
 
-Sample Output
+Sample Output 2
+3 4 1 2
 
- 23 4 1 2
 
 If multiple permutations have the minimum similarity, you may print any of them. For instance, you may also print 4 3 2 1.

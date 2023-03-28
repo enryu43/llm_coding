@@ -1,6 +1,8 @@
 Problem Statement
 You are given a length-N sequence (A_1, A_2, …, A_N) of positive integers, and Q queries about the sequence.
+
 For each q = 1, 2, …, Q, the q-th query gives you an integer pair (l_q, r_q);
+
 print the number of integer triplets (i, j, k) such that
 
 l_q ≤i j k ≤r_q, and
@@ -8,7 +10,6 @@ A_i = A_j = A_k.
 
 
 Constraints
-
 1 ≤N ≤2 ×10^5
 1 ≤Q ≤2 ×10^5
 1 ≤A_i ≤2 ×10^5
@@ -17,8 +18,8 @@ All values in the input are integers.
 
 
 Input
-The input is given from Standard Input
- in the following format:
+The input is given from Standard Input in the following format:
+
 N Q
 A_1 A_2 …A_N
 l_1 r_1
@@ -30,9 +31,8 @@ Output
 Print Q lines.
 For q = 1, 2, …, Q, the q-th line should contain the answer to the q-th query.
 
-Sample Input
-
- 110 4
+Sample Input 1
+10 4
 2 7 1 8 2 8 1 8 2 8
 1 10
 1 9
@@ -40,19 +40,18 @@ Sample Input
 5 5
 
 
-Sample Output
-
- 15
+Sample Output 1
+5
 2
 4
 0
 
+
 For the first query, there are five triplets of integers that satisfy the conditions in the problem statement:
 (1, 5, 9), (4, 6, 8), (4, 6, 10), (4, 8, 10), and (6, 8, 10).
 
-Sample Input
-
- 220 10
+Sample Input 2
+20 10
 2 2 2 2 1 1 2 2 1 1 1 2 1 2 1 2 2 1 2 1
 12 16
 17 18
@@ -66,9 +65,8 @@ Sample Input
 8 12
 
 
-Sample Output
-
- 21
+Sample Output 2
+1
 0
 5
 2

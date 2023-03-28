@@ -1,0 +1,77 @@
+Problem Statement
+There are N integers written on a blackboard. The i-th integer is A_i.
+Here, N is even.
+Additionally, integers L and R are given.
+
+Alice and Bob will play a game.
+They alternately take turns, with Alice going first.
+In each turn, the player chooses a number written on the blackboard and erases it.
+
+The game will end in N turns.
+Then, let s be the sum of the integers erased by Alice.
+If L ≤s ≤R, Alice wins; otherwise, Bob wins.
+Find which player will win when both players play optimally.
+
+Constraints
+2 ≤N ≤5000
+N is even.
+1 ≤A_i ≤10^9
+0 ≤L ≤R ≤∑_1 ≤i ≤N A_i
+All values in input are integers.
+
+
+Input
+Input is given from Standard Input in the following format:
+
+N L R
+A_1 A_2 ⋯A_N
+
+
+Output
+If Alice wins, print Alice; if Bob wins, print Bob.
+
+Sample Input 1
+4 5 6
+3 1 4 5
+
+
+Sample Output 1
+Alice
+
+
+In this game, Alice will always win.
+Below is a possible progression of the game.
+
+Alice erases 1.
+Bob erases 4.
+Alice erases 5.
+Bob erases 3.
+
+
+Here, the sum of the integers erased by Alice is 6. Since L ≤6 ≤R, Alice wins.
+
+Sample Input 2
+2 2 3
+4 1
+
+
+Sample Output 2
+Bob
+
+
+Sample Input 3
+30 655 688
+42 95 9 13 91 27 99 56 64 15 3 11 5 16 85 3 62 100 64 79 1 70 8 69 70 28 78 4 33 12
+
+
+Sample Output 3
+Bob
+
+
+Sample Input 4
+30 792 826
+81 60 86 57 5 20 26 13 39 64 89 58 43 98 50 79 58 21 27 68 46 47 45 85 88 5 82 90 74 57
+
+
+Sample Output 4
+Alice

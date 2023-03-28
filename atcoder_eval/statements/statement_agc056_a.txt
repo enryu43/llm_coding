@@ -1,0 +1,50 @@
+Problem Statement
+We have a grid board with N rows and N columns.
+
+Paint every square black or white to satisfy all of the conditions below.
+
+For each row, exactly three of the squares in that row are painted black.
+For each column, exactly three of the squares in that column are painted black.
+There are exactly N connected components of black squares.
+Here, two black squares x and y are considered connected when it is possible to start at x and reach y by repeatedly moving up, down, left, or right to a black square.
+
+
+It can be proved that the Constraints of the problem guarantee the existence of a solution.
+
+Constraints
+6 ≤N ≤500
+All values in input are integers.
+
+
+Input
+Input is given from Standard Input in the following format:
+
+N
+
+
+Output
+Print your answer in the following format:
+
+s_1,1s_1,2⋯s_1,N
+s_2,1s_2,2⋯s_2,N
+⋮s_N,1s_N,2⋯s_N,N
+
+
+Here, s_i,j should be a character representing the color of the square at the i-th row from the top and j-th column from the left: s_i,j=# means the square is painted black, and s_i,j=. means it is painted white.
+If multiple solutions exist, printing any of them is accepted.
+
+Sample Input 1
+6
+
+
+Sample Output 1
+##..#.
+##..#.
+..##.#
+..##.#
+##...#
+..###.
+
+
+Here, there are exactly 3 #s in each row and column.
+Additionally, there are exactly 6 connected components of #s.

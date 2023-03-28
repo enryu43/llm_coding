@@ -4,15 +4,14 @@ You will choose K characters at distinct positions in S and change each of them:
 Find the maximum possible number of pairs of consecutive Ys in the resulting string.
 
 Constraints
-
 1 ≤N ≤2 ×10^5
 0 ≤K ≤N
 S is a string of length N consisting of X and Y.
 
 
 Input
-The input is given from Standard Input
- in the following format:
+The input is given from Standard Input in the following format:
+
 N K
 S
 
@@ -20,15 +19,14 @@ S
 Output
 Print the maximum possible number of pairs of consecutive Ys in the resulting string.
 
-Sample Input
-
- 15 1
+Sample Input 1
+5 1
 XYXYX
 
 
-Sample Output
+Sample Output 1
+2
 
- 12
 
 You will choose one character.
 
@@ -38,17 +36,17 @@ If you choose the 3-rd character, the resulting string is XYYYX, with two pairs 
 If you choose the 4-th character, the resulting string is XYXXX, with no pair of consecutive Ys.
 If you choose the 5-th character, the resulting string is XYXYY, with one pair of consecutive Ys at positions 4, 5.
 
+
 Thus, the sought maximum number is 2.
 
-Sample Input
-
- 25 4
+Sample Input 2
+5 4
 XYXYX
 
 
-Sample Output
+Sample Output 2
+2
 
- 22
 
 It is optimal to choose the 1-st, 2-nd, 3-rd, and 5-th characters to get YXYYY, or choose the 1-st, 3-rd, 4-th, and 5-th characters to get YYYXY.
 Note that you may not choose a character at the same position multiple times.

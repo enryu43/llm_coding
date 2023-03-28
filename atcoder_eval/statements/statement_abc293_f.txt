@@ -3,25 +3,28 @@ Given an integer N not less than 2, find the number of integers b not less than 
 
 when N is written in base b, every digit is 0 or 1.
 
+
 Find the answer for T independent test cases.
+
 It can be proved that there is a finite number of desired integers b not less than 2 under the constraints of this problem.
 
 Constraints
-
 1 ≤T ≤1000
 2 ≤N ≤10^18
 All values in the input are integers.
 
 
 Input
-The input is given from Standard Input
- in the following format, where test_i denotes the i-th test case:
+The input is given from Standard Input in the following format, where test_i denotes the i-th test case:
+
 T
 test_1
 test_2
 ⋮test_T
 
+
 Each test case is given in the following format:
+
 N
 
 
@@ -29,19 +32,18 @@ Output
 Print T lines.
 For i = 1, 2, …, T, the i-th line should contain the answer to the i-th test case.
 
-Sample Input
-
- 13
+Sample Input 1
+3
 12
 2
 36
 
 
-Sample Output
-
- 14
+Sample Output 1
+4
 1
 5
+
 
 For the first test case, four b's satisfy the condition in the problem statement: b = 2, 3, 11, 12.
 Indeed, when N=12 is written in base 2, 3, 11, and 12, it becomes 1100, 110, 11 and 10, respectively.

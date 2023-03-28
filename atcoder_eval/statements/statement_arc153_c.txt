@@ -1,0 +1,59 @@
+Problem Statement
+You are given a sequence of length N, A = (A_1, …, A_N), consisting of 1 and -1.
+
+Determine whether there is an integer sequence x = (x_1, …, x_N) that satisfies all of the following conditions, and print one such sequence if it exists.
+
+|x_i| ≤10^12 for every i (1≤i≤N).
+x is strictly increasing. That is, x_1 < ⋯< x_N.
+∑_i=1^N A_ix_i = 0.
+
+
+Constraints
+1≤N≤2×10^5
+A_i ∈{1, -1}
+
+
+Input
+The input is given from Standard Input in the following format:
+
+N
+A_1 …A_N
+
+
+Output
+If there is an integer sequence x that satisfies all of the conditions in question, print Yes; otherwise, print No. In case of Yes, print the elements of such an integer sequence x in the subsequent line, separated by spaces.
+
+x_1 …x_N
+
+
+If multiple integer sequences satisfy the conditions, you may print any of them.
+
+Sample Input 1
+5
+-1 1 -1 -1 1
+
+
+Sample Output 1
+Yes
+-3 -1 4 5 7
+
+
+For this output, we have ∑_i=1^NA_ix_i= -(-3) + (-1) - 4 - 5 + 7 = 0.
+
+Sample Input 2
+1
+-1
+
+
+Sample Output 2
+Yes
+0
+
+
+Sample Input 3
+2
+1 -1
+
+
+Sample Output 3
+No

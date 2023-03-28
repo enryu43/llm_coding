@@ -7,57 +7,48 @@ S contains none of ABC, BCA, and CAB as a (contiguous) substring.
 
 
 Constraints
-
 1 ≤A,B,C ≤10^6
 All values in input are integers.
 
 
 Input
-Input
- is given from Standard Input
- in the following format:
+Input is given from Standard Input in the following format:
+
 A B C
 
 
 Output
 Print the answer.
 
-Sample Input
+Sample Input 1
+1 1 1
 
- 11 1 1
 
+Sample Output 1
+3
 
-Sample Output
-
- 13
 
 The three strings that satisfy the conditions are ACB, CBA, and BAC.
 
-Sample Input
-
- 22 2 2
-
-
-Sample Output
-
- 242
+Sample Input 2
+2 2 2
 
 
-Sample Input
-
- 396 11 46
-
-
-Sample Output
-
- 3818015722
+Sample Output 2
+42
 
 
-Sample Input
+Sample Input 3
+96 11 46
 
- 4125132 102271 152064
+
+Sample Output 3
+818015722
 
 
-Sample Output
+Sample Input 4
+125132 102271 152064
 
- 4128086069
+
+Sample Output 4
+128086069

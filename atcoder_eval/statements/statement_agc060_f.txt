@@ -2,21 +2,22 @@ Problem Statement
 You have a simple undirected graph.
 Each vertex in this graph has an integer interval written on it, and there are C_i,j vertices with the interval [i,j] (1 ≤i ≤j ≤N).
 There are no vertices with other intervals.
+
 For any two vertices, there is an undirected edge between them if and only if the written intervals intersect.
 Here, an interval [a,b] and an interval [c,d] intersect if and only if max(a,c) ≤min(b,d).
+
 Find the number of spanning trees of this graph, modulo 998244353.
 Here, all vertices are pairwise distinguishable.
 
 Constraints
-
 2 ≤N ≤400
 1 ≤C_i,j ≤10^4
 All numbers in the input are integers.
 
 
 Input
-The input is given from Standard Input
- in the following format:
+The input is given from Standard Input in the following format:
+
 N
 C_1,1 C_1,2 ⋯C_1,N
 C_2,2 ⋯C_2,N
@@ -26,48 +27,41 @@ C_2,2 ⋯C_2,N
 Output
 Print the answer.
 
-Sample Input
-
- 12
+Sample Input 1
+2
 1 2
 1
 
 
-Sample Output
+Sample Output 1
+8
 
- 18
 
-
-Sample Input
-
- 23
+Sample Input 2
+3
 1 1 1
 1 1
 1
 
 
-Sample Output
+Sample Output 2
+99
 
- 299
 
-
-Sample Input
-
- 34
+Sample Input 3
+4
 8 3 8 10
 1 5 3
 1 6
 4
 
 
-Sample Output
+Sample Output 3
+971555314
 
- 3971555314
 
-
-Sample Input
-
- 410
+Sample Input 4
+10
 2742 5611 1401 5439 5220 8571 4998 4194 7443 2492
 2393 3201 9106 1649 2456 1984 7159 9679 7695
 808 4600 2573 7771 5839 9504 4381 3223
@@ -80,6 +74,5 @@ Sample Input
 865
 
 
-Sample Output
-
- 4234850531
+Sample Output 4
+234850531

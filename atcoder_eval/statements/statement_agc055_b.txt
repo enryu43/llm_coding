@@ -1,0 +1,53 @@
+Problem Statement
+You are given a string S of length N, consisting of A, B, and C.
+You are allowed to perform the following operation any number of times:
+
+Choose any i with 1 ≤i ≤N-2, such that S_iS_i+1S_i+2 is equal to ABC, BCA, or CAB.
+Then, replace the three characters with ABC, BCA, or CAB.
+
+
+For example, you can perform the following transformations with string AABC: 
+
+AABC →ABCA →BCAA
+
+
+Determine if you can obtain string T from string S with some finite (maybe zero) number of operations above.
+
+Constraints
+3≤N ≤5·10^5
+S is a string of length N consisting of A, B, and C.
+T is a string of length N consisting of A, B, and C.
+
+
+Input
+Input is given from Standard Input in the following format:
+
+N
+S
+T
+
+
+Output
+If you can transform S into T with the operations above, output YES, otherwise output NO.
+The checker is case-insensitive: you can use either uppercase or lowercase letters.
+
+Sample Input 1
+4
+AABC
+BCAA
+
+
+Sample Output 1
+YES
+
+
+This example was explained in the statement.
+
+Sample Input 2
+4
+ABCA
+BCAB
+
+
+Sample Output 2
+NO

@@ -1,0 +1,66 @@
+Problem Statement
+There are N dogs numbered 1 through N and M cats numbered 1 through M.
+You will arrange the (N+M) animals in a line from left to right.
+An arrangement causes each animal's frustration as follows:
+
+The frustration of dog i is A_i×|x-y|, where x and y are the numbers of cats to the left and right of that dog, respectively.
+The frustration of cat i is B_i×|x-y|, where x and y are the numbers of dogs to the left and right of that cat, respectively.
+
+
+Find the minimum possible sum of the frustrations.
+
+Constraints
+1≤N,M ≤300
+1≤A_i,B_i ≤10^9
+All values in the input are integers.
+
+
+Input
+The input is given from Standard Input in the following format:
+
+N M
+A_1 A_2 …A_N
+B_1 B_2 …B_M
+
+
+Output
+Print the answer as an integer.
+
+Sample Input 1
+2 2
+1 3
+2 4
+
+
+Sample Output 1
+6
+
+
+Consider the following arrangement: dog 1, cat 2, dog 2, cat 1, from left to right.  Then,
+
+dog 1's frustration is 1×|0-2|=2;
+dog 2's frustration is 3×|1-1|=0;
+cat 1's frustration is 2×|2-0|=4; and
+cat 2's frustration is 4×|1-1|=0,
+
+
+so the sum of the frustrations is 6.  Rearranging the animals does not make the sum less than 6, so the answer is 6.
+
+Sample Input 2
+1 2
+100
+100 290
+
+
+Sample Output 2
+390
+
+
+Sample Input 3
+5 7
+522 575 426 445 772
+81 447 629 497 202 775 325
+
+
+Sample Output 3
+13354

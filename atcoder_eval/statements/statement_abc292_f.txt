@@ -1,0 +1,32 @@
+Problem Statement
+Find the maximum side length of a regular triangle that can be drawn within a rectangle whose side lengths are A and B.
+
+Constraints
+1 ≤A,B ≤1000
+A and B are integers.
+
+
+Input
+The input is given from Standard Input in the following format:
+
+A B
+
+
+Output
+Print the answer.
+
+Your output is considered correct if the absolute or relative error from the true answer is at most 10^-9.
+
+Sample Input 1
+1 1
+
+
+Sample Output 1
+1.03527618041008295791
+
+
+The following figure shows an optimal drawing, with the side length of √(6) - √(2).
+
+
+
+Note that the sample output does not strictly match √(6)- √(2), but the error is within 10^-9, so it is considered correct.

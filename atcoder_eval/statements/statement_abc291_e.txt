@@ -1,0 +1,66 @@
+Problem Statement
+There is a length-N sequence A=(A_1,…,A_N) that is a permutation of 1,…,N.
+
+While you do not know A, you know that A_X_i<A_Y_i for M pairs of integers (X_i,Y_i).
+
+Can A be uniquely determined?  If it is possible, find A.
+
+Constraints
+2 ≤N ≤2×10^5
+1 ≤M ≤2×10^5
+1≤X_i,Y_i ≤N
+All values in the input are integers.
+There is an A consistent with the input.
+
+
+Input
+The input is given from Standard Input in the following format:
+
+N M
+X_1 Y_1
+⋮X_M Y_M
+
+
+Output
+If A can be uniquely determined, print Yes in the first line.  Then, print A_1,…,A_N in the second line, separated by spaces.
+
+If A cannot be uniquely determined, just print No.
+
+Sample Input 1
+3 2
+3 1
+2 3
+
+
+Sample Output 1
+Yes
+3 1 2
+
+
+We can uniquely determine that A=(3,1,2).
+
+Sample Input 2
+3 2
+3 1
+3 2
+
+
+Sample Output 2
+No
+
+
+Two sequences (2,3,1) and (3,2,1) can be A.
+
+Sample Input 3
+4 6
+1 2
+1 2
+2 3
+2 3
+3 4
+3 4
+
+
+Sample Output 3
+Yes
+1 2 3 4

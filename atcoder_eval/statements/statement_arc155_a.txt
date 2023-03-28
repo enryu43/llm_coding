@@ -1,14 +1,15 @@
 Problem Statement
 You are given a string S of length N consisting of lowercase English letters, and a positive integer K.
+
 Determine whether there is a string S' of length K that satisfies the following conditions.
 
 The concatenation of S and S' in this order is a palindrome.
 The concatenation of S' and S in this order is a palindrome.
 
+
 You have T test cases to solve.
 
 Constraints
-
 1 ≤T ≤10^5
 1 ≤N ≤2 ×10^5
 1 ≤K ≤10^18
@@ -18,13 +19,15 @@ In each input file, the sum of N over the test cases is at most 2 ×10^5.
 
 
 Input
-The input is given from Standard Input
- in the following format:
+The input is given from Standard Input in the following format:
+
 T
 case_1
 ⋮case_T
 
+
 Each case is in the following format:
+
 N K
 S
 
@@ -32,26 +35,25 @@ S
 Output
 Print T lines. The i-th line should contain Yes if there is a string S' that satisfies the conditions for the i-th test case, and No otherwise.
 
-Sample Input
-
- 12
+Sample Input 1
+2
 6 2
 abbaab
 5 3
 abcbb
 
 
-Sample Output
-
- 1Yes
+Sample Output 1
+Yes
 No
 
+
 For the first test case, if we let S' = ba, for instance, the concatenation of S and S' in this order will be abbaabba, which is a palindrome. Here, the concatenation of S' and S in this order is baabbaab, which is also a palindrome. Thus, S' = ba satisfies the condition, so the answer is Yes.
+
 For the second test case, we can prove that no string satisfies the conditions.
 
-Sample Input
-
- 23
+Sample Input 2
+3
 12 400378271514996652
 njvhhvjnnjvh
 10 884633988115575508
@@ -60,8 +62,7 @@ rrhiyvrrur
 vsxmxajrrduhhudrrjaxmxsvvsxmxajrrduh
 
 
-Sample Output
-
- 2Yes
+Sample Output 2
+Yes
 No
 Yes

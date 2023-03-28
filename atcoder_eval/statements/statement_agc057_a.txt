@@ -7,43 +7,46 @@ For any two distinct elements a, b ∈A, the string representing a in base ten i
 A substring of a string is its contiguous subsequence. For example, 1, 12, and 23 are substrings of 123, while 21 and 13 are not.
 
 
+
+
+
 You are given positive integers L and R. Find the maximum possible number of elements in a good set A consisting of integers between L and R (inclusive).
+
 We will give you T test cases; solve each of them.
 
 Constraints
-
 1≤T≤10^4
 1≤L≤R≤10^9
 
 
 Input
-Input
- is given from Standard Input
- in the following format:
+Input is given from Standard Input in the following format:
+
 T
 case_1
 ⋮case_T
 
+
 Each case is in the following format:
+
 L R
 
 
 Output
 Print T lines. The i-th line should contain the answer for case_i.
 
-Sample Input
-
- 13
+Sample Input 1
+3
 3 8
 3 18
 1 1000
 
 
-Sample Output
-
- 16
+Sample Output 1
+6
 10
 900
+
 
 For the first two cases, the following are good sets A with the maximum number of elements.
 
